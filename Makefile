@@ -3,7 +3,10 @@
 __dirs := $(shell mkdir -p api)
 
 run:
-	go run cmd/main.go
+	go run cmd/server/main.go
+
+deploy:
+	go run cmd/deployment/main.go
 
 solc: api/BalanceCheck.go
 

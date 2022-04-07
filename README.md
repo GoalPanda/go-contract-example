@@ -18,7 +18,11 @@ make solc
 ```sh
 # run local chain
 ganache
-# modify private key
+# modify private key and rpc url if needed
+vim .env
+# deploy smart contract
+make deploy
+# modify contract address
 vim .env
 # run
 make run
